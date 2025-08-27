@@ -37,9 +37,15 @@ for (const copy of copyElement) {
     });
 }
 function copyToClipboard(text) {
-    navigator.clipboard.writeText(text);
-    alert("নাম্বারটি কপি হয়েছে : " + text);
+  if (!navigator.clipboard) {
+    alert("দুঃখিত, এই ব্রাউজারে ক্লিপবোর্ড সাপোর্ট নেই। নম্বর: " + text);
+    return;
+  }
+  navigator.clipboard.writeText(text)
+    .then(() => alert("নাম্বারটি কপি হয়েছে: " + text))
+    .catch(() => alert("কপি করা যায়নি। নম্বর: " + text));
 }
+
 
 //CALL part
 let coinCount = 100;
