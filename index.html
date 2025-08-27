@@ -35,12 +35,12 @@
               <img src="images/heart.png" alt="heart image" class="w-6">
             </button>
             <button type="button" class="flex justify-center items-center gap-2 bg-[#ECFFF0] p-3 w-28 h-12 mx-0 md:mx-4 my-4 md:my-0 rounded-full">
-              <span class="font-bold">100</span>
+              <span id="coin-id" class="font-bold">100</span>
               <img src="images/coin.png" alt="coin image" class="w-6">
             </button>
             <button type="button" class="flex justify-center items-center gap-2 bg-[#00A63E] p-3 w-28 h-12 rounded-full text-white font-bold">
               <p class="font-bold">
-                <span>0</span> Copy
+                <span id="copy-count">0</span> Copy
               </p>
             </button>
           </div>
@@ -60,6 +60,7 @@
       <section class="grid grid-cols-12 md:px-14 lg:px-0 container mx-auto">
         <div class="col-span-12 lg:col-span-9">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Card 1 -->
             <div class="bg-white w-full p-8 shadow-sm rounded-xl flex flex-col justify-between h-full">
               <div>
                 <div class="flex items-center justify-between">
@@ -74,11 +75,11 @@
                 <button class="bg-[#F2F2F2] px-[15px] py-[5px] rounded-2xl mb-6 text-[#5C5C5C]">সার্বজনীন</button>
               </div>
               <div class="flex flex-col xl:flex-row gap-2 flex-wrap mt-4">
-                <button class="min-w-36 py-2 border border-[#D4D6D5] rounded-xl text-[#5c5c5c]">
+                <button onclick="copyToClipboard('999')"  class="min-w-36 py-2 border border-[#D4D6D5] rounded-xl text-[#5c5c5c] cursor-pointer copy">
                   <i class="fa-solid fa-copy"></i>
-                  <span class="copy">Copy</span>
+                  <span>Copy</span>
                 </button>
-                <button class="min-w-36 py-2 text-white rounded-xl bg-[#00A63E]">
+                <button class="min-w-36 py-2 text-white rounded-xl bg-[#00A63E] cursor-pointer call-btn">
                   <i class="fa-solid fa-phone"></i>
                   <span>Call</span>
                 </button>
@@ -99,16 +100,17 @@
                 <button class="bg-[#F2F2F2] px-[15px] py-[5px] rounded-2xl mb-6 text-[#5C5C5C]">পুলিশ</button>
               </div>
               <div class="flex flex-col xl:flex-row gap-2 flex-wrap mt-4">
-                <button class="min-w-36 py-2 border border-[#D4D6D5] rounded-xl text-[#5c5c5c]">
+                <button onclick="copyToClipboard('999')" class="min-w-36 py-2 border border-[#D4D6D5] rounded-xl text-[#5c5c5c] cursor-pointer copy">
                   <i class="fa-solid fa-copy"></i>
-                  <span class="copy">Copy</span>
+                  <span>Copy</span>
                 </button>
-                <button class="min-w-36 py-2 text-white rounded-xl bg-[#00A63E]">
+                <button class="min-w-36 py-2 text-white rounded-xl bg-[#00A63E] cursor-pointer call-btn">
                   <i class="fa-solid fa-phone"></i>
                   <span>Call</span>
                 </button>
               </div>
             </div>
+            <!-- Card 3 -->
             <div class="bg-white w-full p-8 shadow-sm rounded-xl flex flex-col justify-between h-full">
               <div>
                 <div class="flex items-center justify-between">
@@ -123,16 +125,17 @@
                 <button class="bg-[#F2F2F2] px-[15px] py-[5px] rounded-2xl mb-6 text-[#5C5C5C]">ফায়ার</button>
               </div>
               <div class="flex flex-col xl:flex-row gap-2 flex-wrap mt-4">
-                <button class="min-w-36 py-2 border border-[#D4D6D5] rounded-xl text-[#5c5c5c]">
+                <button onclick="copyToClipboard('999')" class="min-w-36 py-2 border border-[#D4D6D5] rounded-xl text-[#5c5c5c] cursor-pointer copy">
                   <i class="fa-solid fa-copy"></i>
-                  <span class="copy">Copy</span>
+                  <span>Copy</span>
                 </button>
-                <button class="min-w-36 py-2 text-white rounded-xl bg-[#00A63E]">
+                <button class="min-w-36 py-2 text-white rounded-xl bg-[#00A63E] cursor-pointer call-btn">
                   <i class="fa-solid fa-phone"></i>
                   <span>Call</span>
                 </button>
               </div>
             </div>
+            <!-- Card 4 -->
             <div class="bg-white w-full p-8 shadow-sm rounded-xl flex flex-col justify-between h-full">
               <div>
                 <div class="flex items-center justify-between">
@@ -147,16 +150,17 @@
                 <button class="bg-[#F2F2F2] px-[15px] py-[5px] rounded-2xl mb-6 text-[#5C5C5C]">স্বাস্থ্য</button>
               </div>
               <div class="flex flex-col xl:flex-row gap-2 flex-wrap mt-4">
-                <button class="min-w-36 py-2 border border-[#D4D6D5] rounded-xl text-[#5c5c5c]">
+                <button onclick="copyToClipboard('1994-999999')" class="min-w-36 py-2 border border-[#D4D6D5] rounded-xl text-[#5c5c5c] cursor-pointer copy">
                   <i class="fa-solid fa-copy"></i>
-                  <span class="copy">Copy</span>
+                  <span>Copy</span>
                 </button>
-                <button class="min-w-36 py-2 text-white rounded-xl bg-[#00A63E]">
+                <button class="min-w-36 py-2 text-white rounded-xl bg-[#00A63E] cursor-pointer call-btn">
                   <i class="fa-solid fa-phone"></i>
                   <span>Call</span>
                 </button>
               </div>
             </div>
+            <!-- Card 5 -->
             <div class="bg-white w-full p-8 shadow-sm rounded-xl flex flex-col justify-between h-full">
               <div>
                 <div class="flex items-center justify-between">
@@ -171,16 +175,17 @@
                 <button class="bg-[#F2F2F2] px-[15px] py-[5px] rounded-2xl mb-6 text-[#5C5C5C]">সহায়তা</button>
               </div>
               <div class="flex flex-col xl:flex-row gap-2 flex-wrap mt-4">
-                <button class="min-w-36 py-2 border border-[#D4D6D5] rounded-xl text-[#5c5c5c]">
+                <button onclick="copyToClipboard('109')" class="min-w-36 py-2 border border-[#D4D6D5] rounded-xl text-[#5c5c5c] cursor-pointer copy">
                   <i class="fa-solid fa-copy"></i>
-                  <span class="copy">Copy</span>
+                  <span>Copy</span>
                 </button>
-                <button class="min-w-36 py-2 text-white rounded-xl bg-[#00A63E]">
+                <button class="min-w-36 py-2 text-white rounded-xl bg-[#00A63E] cursor-pointer call-btn">
                   <i class="fa-solid fa-phone"></i>
                   <span>Call</span>
                 </button>
               </div>
             </div>
+            <!-- Card 6 -->
             <div class="bg-white w-full p-8 shadow-sm rounded-xl flex flex-col justify-between h-full">
               <div>
                 <div class="flex items-center justify-between">
@@ -195,16 +200,17 @@
                 <button class="bg-[#F2F2F2] px-[15px] py-[5px] rounded-2xl mb-6 text-[#5C5C5C]">সরকারি</button>
               </div>
               <div class="flex flex-col xl:flex-row gap-2 flex-wrap mt-4">
-                <button class="min-w-36 py-2 border border-[#D4D6D5] rounded-xl text-[#5c5c5c]">
+                <button onclick="copyToClipboard('106')" class="min-w-36 py-2 border border-[#D4D6D5] rounded-xl text-[#5c5c5c] cursor-pointer copy">
                   <i class="fa-solid fa-copy"></i>
-                  <span class="copy">Copy</span>
+                  <span>Copy</span>
                 </button>
-                <button class="min-w-36 py-2 text-white rounded-xl bg-[#00A63E]">
+                <button class="min-w-36 py-2 text-white rounded-xl bg-[#00A63E] cursor-pointer call-btn">
                   <i class="fa-solid fa-phone"></i>
                   <span>Call</span>
                 </button>
               </div>
             </div>
+            <!-- Card 7 -->
             <div class="bg-white w-full p-8 shadow-sm rounded-xl flex flex-col justify-between h-full">
               <div>
                 <div class="flex items-center justify-between">
@@ -219,16 +225,17 @@
                 <button class="bg-[#F2F2F2] px-[15px] py-[5px] rounded-2xl mb-6 text-[#5C5C5C]">বিদ্যুৎ</button>
               </div>
               <div class="flex flex-col xl:flex-row gap-2 flex-wrap mt-4">
-                <button class="min-w-36 py-2 border border-[#D4D6D5] rounded-xl text-[#5c5c5c]">
+                <button onclick="copyToClipboard('16216')" class="min-w-36 py-2 border border-[#D4D6D5] rounded-xl text-[#5c5c5c] cursor-pointer copy">
                   <i class="fa-solid fa-copy"></i>
-                  <span class="copy">Copy</span>
+                  <span>Copy</span>
                 </button>
-                <button class="min-w-36 py-2 text-white rounded-xl bg-[#00A63E]">
+                <button class="min-w-36 py-2 text-white rounded-xl bg-[#00A63E] cursor-pointer call-btn">
                   <i class="fa-solid fa-phone"></i>
                   <span>Call</span>
                 </button>
               </div>
             </div>
+            <!-- Card 8 -->
             <div class="bg-white w-full p-8 shadow-sm rounded-xl flex flex-col justify-between h-full">
               <div>
                 <div class="flex items-center justify-between">
@@ -243,16 +250,17 @@
                 <button class="bg-[#F2F2F2] px-[15px] py-[5px] rounded-2xl mb-6 text-[#5C5C5C]">এনজিও</button>
               </div>
               <div class="flex flex-col xl:flex-row gap-2 flex-wrap mt-4">
-                <button class="min-w-36 py-2 border border-[#D4D6D5] rounded-xl text-[#5c5c5c]">
+                <button onclick="copyToClipboard('16445')" class="min-w-36 py-2 border border-[#D4D6D5] rounded-xl text-[#5c5c5c] cursor-pointer copy">
                   <i class="fa-solid fa-copy"></i>
-                  <span class="copy">Copy</span>
+                  <span>Copy</span>
                 </button>
-                <button class="min-w-36 py-2 text-white rounded-xl bg-[#00A63E]">
+                <button class="min-w-36 py-2 text-white rounded-xl bg-[#00A63E] cursor-pointer call-btn">
                   <i class="fa-solid fa-phone"></i>
                   <span>Call</span>
                 </button>
               </div>
             </div>
+            <!-- Card 9 -->
             <div class="bg-white w-full p-8 shadow-sm rounded-xl flex flex-col justify-between h-full">
               <div>
                 <div class="flex items-center justify-between">
@@ -267,11 +275,11 @@
                 <button class="bg-[#F2F2F2] px-[15px] py-[5px] rounded-2xl mb-6 text-[#5C5C5C]">পরিবহন</button>
               </div>
               <div class="flex flex-col xl:flex-row gap-2 flex-wrap mt-4">
-                <button class="min-w-36 py-2 border border-[#D4D6D5] rounded-xl text-[#5c5c5c]">
+                <button onclick="copyToClipboard('163')" class="min-w-36 py-2 border border-[#D4D6D5] rounded-xl text-[#5c5c5c] cursor-pointer copy">
                   <i class="fa-solid fa-copy"></i>
-                  <span class="copy">Copy</span>
+                  <span>Copy</span>
                 </button>
-                <button class="min-w-36 py-2 text-white rounded-xl bg-[#00A63E]">
+                <button class="min-w-36 py-2 text-white rounded-xl bg-[#00A63E] cursor-pointer call-btn">
                   <i class="fa-solid fa-phone"></i>
                   <span>Call</span>
                 </button>
@@ -286,18 +294,18 @@
               <span class="text-[20px]">Call History</span>
             </div>
             <div>
-              <button class="bg-[#00A63E] text-white px-10 py-3 rounded-full">Clear</button>
+              <button id="clear-history" class="bg-[#00A63E] text-white px-10 py-3 rounded-full cursor-pointer">Clear</button>
             </div>
           </div>
-          <div id="container">
-            <div class="flex justify-between bg-[#FAFAFA] p-4 rounded-xl my-4">
+          <div id="callHistory-container">
+            <!-- <div class="flex justify-between bg-[#FAFAFA] p-4 rounded-xl my-4">
               <div>
                 <h3>জাতীয় জরুরি সেবা</h3>
                 <p>999</p>
               </div>
               <div>
                 <h2>11:36:58 AM</h2>
-              </div>
+              </div> -->
             </div>
           </div>
         </aside>
