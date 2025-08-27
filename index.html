@@ -31,7 +31,7 @@
         <div>
           <div class="flex flex-col md:flex-row">
             <button type="button" class="flex justify-center items-center gap-2 bg-[#ECFFF0] p-3 w-28 h-12 rounded-full">
-              <span class="font-bold">0</span>
+              <span class="font-bold" id="heart-count">0</span>
               <img src="images/heart.png" alt="heart image" class="w-6">
             </button>
             <button type="button" class="flex justify-center items-center gap-2 bg-[#ECFFF0] p-3 w-28 h-12 mx-0 md:mx-4 my-4 md:my-0 rounded-full">
@@ -66,7 +66,7 @@
                   <div class="p-3 bg-[#FFE3E2] rounded-xl">
                     <img src="images/emergency.png" alt="emergency image" class="w-8">
                   </div>
-                  <img src="images/small-heart.png" alt="small heart image" class="w-6 h-5">
+                  <img src="images/small-heart.png" alt="small heart image" class="w-6 h-5 heart-icon cursor-pointer">
                 </div>
                 <h5 class="font-bold text-xl mt-4">জাতীয় জরুরি সেবা</h5>
                 <p class="text-[#5C5C5C]">National Emergency</p>
@@ -76,7 +76,7 @@
               <div class="flex flex-col xl:flex-row gap-2 flex-wrap mt-4">
                 <button class="min-w-36 py-2 border border-[#D4D6D5] rounded-xl text-[#5c5c5c]">
                   <i class="fa-solid fa-copy"></i>
-                  <span>Copy</span>
+                  <span class="copy">Copy</span>
                 </button>
                 <button class="min-w-36 py-2 text-white rounded-xl bg-[#00A63E]">
                   <i class="fa-solid fa-phone"></i>
@@ -91,7 +91,7 @@
                   <div class="p-3 bg-[#DFEFFF] rounded-xl">
                     <img src="images/police.png" alt="emergency image" class="w-8">
                   </div>
-                  <img src="images/small-heart.png" alt="small heart image" class="w-6 h-5">
+                  <img src="images/small-heart.png" alt="small heart image" class="w-6 h-5 heart-icon cursor-pointer">
                 </div>
                 <h5 class="font-bold text-xl mt-4">পুলিশ</h5>
                 <p class="text-[#5C5C5C]">Police</p>
@@ -101,7 +101,7 @@
               <div class="flex flex-col xl:flex-row gap-2 flex-wrap mt-4">
                 <button class="min-w-36 py-2 border border-[#D4D6D5] rounded-xl text-[#5c5c5c]">
                   <i class="fa-solid fa-copy"></i>
-                  <span>Copy</span>
+                  <span class="copy">Copy</span>
                 </button>
                 <button class="min-w-36 py-2 text-white rounded-xl bg-[#00A63E]">
                   <i class="fa-solid fa-phone"></i>
@@ -115,7 +115,7 @@
                   <div class="p-3 bg-[#FFE3E2] rounded-xl">
                     <img src="images/fire-service.png" alt="emergency image" class="w-8">
                   </div>
-                  <img src="images/small-heart.png" alt="small heart image" class="w-6 h-5">
+                  <img src="images/small-heart.png" alt="small heart image" class="w-6 h-5 heart-icon cursor-pointer">
                 </div>
                 <h5 class="font-bold text-xl mt-4">ফায়ার সার্ভিস</h5>
                 <p class="text-[#5C5C5C]">Fire Service</p>
@@ -125,7 +125,7 @@
               <div class="flex flex-col xl:flex-row gap-2 flex-wrap mt-4">
                 <button class="min-w-36 py-2 border border-[#D4D6D5] rounded-xl text-[#5c5c5c]">
                   <i class="fa-solid fa-copy"></i>
-                  <span>Copy</span>
+                  <span class="copy">Copy</span>
                 </button>
                 <button class="min-w-36 py-2 text-white rounded-xl bg-[#00A63E]">
                   <i class="fa-solid fa-phone"></i>
@@ -139,7 +139,7 @@
                   <div class="p-3 bg-[#FFE3E2] rounded-xl">
                     <img src="images/ambulance.png" alt="emergency image" class="w-8">
                   </div>
-                  <img src="images/small-heart.png" alt="small heart image" class="w-6 h-5">
+                  <img src="images/small-heart.png" alt="small heart image" class="w-6 h-5 heart-icon cursor-pointer">
                 </div>
                 <h5 class="font-bold text-xl mt-4">অ্যাম্বুলেন্স</h5>
                 <p class="text-[#5C5C5C]">Ambulance</p>
@@ -149,7 +149,7 @@
               <div class="flex flex-col xl:flex-row gap-2 flex-wrap mt-4">
                 <button class="min-w-36 py-2 border border-[#D4D6D5] rounded-xl text-[#5c5c5c]">
                   <i class="fa-solid fa-copy"></i>
-                  <span>Copy</span>
+                  <span class="copy">Copy</span>
                 </button>
                 <button class="min-w-36 py-2 text-white rounded-xl bg-[#00A63E]">
                   <i class="fa-solid fa-phone"></i>
@@ -163,7 +163,7 @@
                   <div class="p-3 bg-[#FFE3E2] rounded-xl">
                     <img src="images/emergency.png" alt="emergency image" class="w-8">
                   </div>
-                  <img src="images/small-heart.png" alt="small heart image" class="w-6 h-5">
+                  <img src="images/small-heart.png" alt="small heart image" class="w-6 h-5 heart-icon cursor-pointer">
                 </div>
                 <h5 class="font-bold text-xl mt-4">নারী ও শিশু সহায়তা</h5>
                 <p class="text-[#5C5C5C]">Women & Child Helpline</p>
@@ -173,7 +173,7 @@
               <div class="flex flex-col xl:flex-row gap-2 flex-wrap mt-4">
                 <button class="min-w-36 py-2 border border-[#D4D6D5] rounded-xl text-[#5c5c5c]">
                   <i class="fa-solid fa-copy"></i>
-                  <span>Copy</span>
+                  <span class="copy">Copy</span>
                 </button>
                 <button class="min-w-36 py-2 text-white rounded-xl bg-[#00A63E]">
                   <i class="fa-solid fa-phone"></i>
@@ -187,7 +187,7 @@
                   <div class="p-3 bg-[#FFE3E2] rounded-xl">
                     <img src="images/emergency.png" alt="emergency image" class="w-8">
                   </div>
-                  <img src="images/small-heart.png" alt="small heart image" class="w-6 h-5">
+                  <img src="images/small-heart.png" alt="small heart image" class="w-6 h-5 heart-icon cursor-pointer">
                 </div>
                 <h5 class="font-bold text-xl mt-4">দুদক</h5>
                 <p class="text-[#5C5C5C]">Anti-Corruption</p>
@@ -197,7 +197,7 @@
               <div class="flex flex-col xl:flex-row gap-2 flex-wrap mt-4">
                 <button class="min-w-36 py-2 border border-[#D4D6D5] rounded-xl text-[#5c5c5c]">
                   <i class="fa-solid fa-copy"></i>
-                  <span>Copy</span>
+                  <span class="copy">Copy</span>
                 </button>
                 <button class="min-w-36 py-2 text-white rounded-xl bg-[#00A63E]">
                   <i class="fa-solid fa-phone"></i>
@@ -211,7 +211,7 @@
                   <div class="p-3 bg-[#FFE3E2] rounded-xl">
                     <img src="images/emergency.png" alt="emergency image" class="w-8">
                   </div>
-                  <img src="images/small-heart.png" alt="small heart image" class="w-6 h-5">
+                  <img src="images/small-heart.png" alt="small heart image" class="w-6 h-5 heart-icon cursor-pointer">
                 </div>
                 <h5 class="font-bold text-xl mt-4">বিদ্যুৎ বিভ্রাট</h5>
                 <p class="text-[#5C5C5C]">Electricity Outage</p>
@@ -221,7 +221,7 @@
               <div class="flex flex-col xl:flex-row gap-2 flex-wrap mt-4">
                 <button class="min-w-36 py-2 border border-[#D4D6D5] rounded-xl text-[#5c5c5c]">
                   <i class="fa-solid fa-copy"></i>
-                  <span>Copy</span>
+                  <span class="copy">Copy</span>
                 </button>
                 <button class="min-w-36 py-2 text-white rounded-xl bg-[#00A63E]">
                   <i class="fa-solid fa-phone"></i>
@@ -235,7 +235,7 @@
                   <div class="p-3 bg-[#FFE3E2] rounded-xl">
                     <img src="images/emergency.png" alt="emergency image" class="w-8">
                   </div>
-                  <img src="images/small-heart.png" alt="small heart image" class="w-6 h-5">
+                  <img src="images/small-heart.png" alt="small heart image" class="w-6 h-5 heart-icon cursor-pointer">
                 </div>
                 <h5 class="font-bold text-xl mt-4">ব্র্যাক</h5>
                 <p class="text-[#5C5C5C]">Brac</p>
@@ -245,7 +245,7 @@
               <div class="flex flex-col xl:flex-row gap-2 flex-wrap mt-4">
                 <button class="min-w-36 py-2 border border-[#D4D6D5] rounded-xl text-[#5c5c5c]">
                   <i class="fa-solid fa-copy"></i>
-                  <span>Copy</span>
+                  <span class="copy">Copy</span>
                 </button>
                 <button class="min-w-36 py-2 text-white rounded-xl bg-[#00A63E]">
                   <i class="fa-solid fa-phone"></i>
@@ -259,7 +259,7 @@
                   <div class="p-3 bg-[#FFE3E2] rounded-xl">
                     <img src="images/emergency.png" alt="emergency image" class="w-8">
                   </div>
-                  <img src="images/small-heart.png" alt="small heart image" class="w-6 h-5">
+                  <img src="images/small-heart.png" alt="small heart image" class="w-6 h-5 heart-icon cursor-pointer">
                 </div>
                 <h5 class="font-bold text-xl mt-4">বাংলাদেশ রেলওয়ে</h5>
                 <p class="text-[#5C5C5C]">Bangladesh Railway</p>
@@ -269,7 +269,7 @@
               <div class="flex flex-col xl:flex-row gap-2 flex-wrap mt-4">
                 <button class="min-w-36 py-2 border border-[#D4D6D5] rounded-xl text-[#5c5c5c]">
                   <i class="fa-solid fa-copy"></i>
-                  <span>Copy</span>
+                  <span class="copy">Copy</span>
                 </button>
                 <button class="min-w-36 py-2 text-white rounded-xl bg-[#00A63E]">
                   <i class="fa-solid fa-phone"></i>
@@ -303,5 +303,6 @@
         </aside>
       </section>
     </main>
+    <script src="home.js"></script>
   </body>
 </html>
