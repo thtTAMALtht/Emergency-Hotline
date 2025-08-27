@@ -87,7 +87,7 @@ document.getElementById('clear-history').addEventListener('click', function() {
 
 
 
-//another way
+//another way CALL part
 // const callButtons = document.getElementsByClassName('call-btn');
 // for(const call of callButtons){
 //     call.addEventListener('click',function() {
