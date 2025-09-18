@@ -47,6 +47,77 @@ function copyToClipboard(text) {
 }
 
 
+//copy part-Delegation start............................
+
+/* one-way
+function copyToClipboard(text) {
+    if (!navigator.clipboard) {
+      alert("দুঃখিত, এই ব্রাউজারে ক্লিপবোর্ড সাপোর্ট নেই। নম্বর: " + text);
+      return;
+    }
+    navigator.clipboard.writeText(text)
+      .then(() => alert("নাম্বারটি কপি হয়েছে: " + text))
+      .catch(() => alert("কপি করা যায়নি। নম্বর: " + text));
+  }
+
+document.getElementById('card-box').addEventListener('click', function(e) {
+    if(e.target.className.includes('copy')){
+        const cardCopy =e.target;
+        let copyValue = getText("copy-count");
+        copyValue++;
+        getId("copy-count").innerText = copyValue;
+
+    }
+    
+});
+
+className.includes('copy') দিয়ে লিখলে শুধু বাটনে কাজ করবে । Icon  ও copy লেখার উপর ক্লিক করলে কাজ করবেনা কারণ copy class দেওয়া নাই । i,span tag এর ভেতর copy class add করলে কাজ করবে ।
+
+e.target.closest('.copy') use করলে i,span tag এর ভেতর copy class add করা লাগবেনা কারণ,
+
+»ধরো ইউজার <button class="copy"> বা এর ভিতরের <i> বা <span> এর উপর ক্লিক করল।
+
+»ক্লিক ইভেন্টে e.target হবে সেই স্পেসিফিক এলিমেন্ট, যেমন <i> বা <span> (যেখানে ইউজার ক্লিক করেছে)।
+
+»কিন্তু <i> বা <span> এর class="copy" নেই, তাই সরাসরি e.target.className.includes('copy') হবে false।
+
+»কিন্তু e.target.closest('.copy') বলবে, “তোমার বাবা, দাদা, বা অন্য কোনো উপরের এলিমেন্টের মধ্যে কি .copy ক্লাস আছে?”
+
+»যেহেতু <button class="copy"> আছে, closest সেটাকে রিটার্ন করবে, ফলে কোড বুঝবে — ইউজার আসলে সেই বাটনে ক্লিক করেছে, তাই কাজ করবে।
+
+*/
+
+
+
+/* using closest
+
+function copyToClipboard(text) {
+    if (!navigator.clipboard) {
+      alert("দুঃখিত, এই ব্রাউজারে ক্লিপবোর্ড সাপোর্ট নেই। নম্বর: " + text);
+      return;
+    }
+    navigator.clipboard.writeText(text)
+      .then(() => alert("নাম্বারটি কপি হয়েছে: " + text))
+      .catch(() => alert("কপি করা যায়নি। নম্বর: " + text));
+  }
+
+document.getElementById('card-box').addEventListener('click', function(e) {
+    if(e.target.closest('.copy')){
+        const cardCopy =e.target;
+        let copyValue = getText("copy-count");
+        copyValue++;
+        getId("copy-count").innerText = copyValue;
+    }
+    
+});
+
+*/
+
+//copy part-delegation end............................
+
+
+
+
 //CALL part
 let coinCount = 100;
 const callButtons = document.getElementsByClassName("call-btn");
